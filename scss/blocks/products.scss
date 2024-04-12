@@ -1,0 +1,90 @@
+.products-set {
+  @extend %block;
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+  .products-set__title {
+    text-align: center;
+    line-height: 100%;
+    @include pxToEm(56);
+  }
+
+  .products-set__content {
+    margin-top: $m-55;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem 2rem;
+
+    @media screen and (max-width: 768px) {
+      grid-template-rows: auto;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 440px) {
+      grid-template-columns: 1fr;
+    }
+    .product {
+      height: 180px;
+      padding: 7rem 2rem 1rem 2rem;
+      position: relative;
+      border-radius: 16px;
+      background: $container-color;
+      background: radial-gradient(
+        ellipse at 104% 9%,
+        rgba(0, 0, 0, 0.3),
+        rgba(23, 60, 34, 0.2),
+        rgba(0, 0, 0, 0.3),
+        rgba(34, 66, 53, 0.2)
+      );
+      @media screen and (max-width: 440px) {
+        width: 300px;
+        height: 250px;
+      }
+      .product__image {
+        width: 120px;
+        position: absolute;
+        top: -4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        @media screen and (max-width: 440px) {
+          width: 200px;
+          height: 200px;
+          top: -2rem;
+        }
+      }
+      .product__title {
+        color: $white-color;
+        @include pxToEm(14);
+        @media screen and (max-width: 440px) {
+          position: absolute;
+          bottom: 2rem;
+        }
+      }
+      .product__price {
+        @include pxToEm(14);
+        @media screen and (max-width: 440px) {
+          position: absolute;
+          bottom: 1rem;
+        }
+      }
+      .product__btn {
+        padding: 2px 5px;
+        position: absolute;
+        right: 1rem;
+        background-color: #181717;
+        border-radius: 8px;
+        @media screen and (max-width: 440px) {
+          position: absolute;
+          bottom: 1rem;
+        }
+
+        &:hover {
+          img {
+            scale: 1.1;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

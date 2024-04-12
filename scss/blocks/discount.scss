@@ -1,0 +1,25 @@
+.discount {
+  @extend %block;
+  .discount__content {
+    width: 100%;
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    border-radius: 16px;
+    background: $container-color;
+    @media screen and (max-width: 768px) {
+      padding: 10px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .discount__description {
+      h2 {
+        @include pxToEm(24);
+      }
+      a {
+        @extend %button;
+      }
+    }
+  }
+}

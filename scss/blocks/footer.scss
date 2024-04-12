@@ -1,0 +1,96 @@
+.footer {
+  margin-top: $m-55;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__logo {
+    width: 2.5rem;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .footer__nav {
+    display: flex;
+    gap: 5rem;
+    @media screen and (max-width: 440px) {
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: $m-20;
+    }
+    .products {
+      .products__list-title {
+        color: $white-color;
+      }
+      .products__list {
+        .products__link {
+          color: $text-color;
+          @include pxToEm(14);
+          &:hover {
+            transition: color 0.3s ease-in-out;
+            color: $white-color;
+          }
+        }
+      }
+    }
+    .support {
+      .support__list-title {
+        color: $white-color;
+      }
+      .support__list {
+        .support__link {
+          color: $text-color;
+          @include pxToEm(14);
+          &:hover {
+            transition: color 0.3s ease-in-out;
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+  .footer__feedback {
+    @media screen and (max-width: 768px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    .footer__form {
+      position: relative;
+      .form__input {
+        width: 100%;
+        padding: 1rem 0.5rem;
+        border-radius: 8px;
+        background-color: $container-color;
+      }
+      .form__submit {
+        padding: 0.6rem;
+        position: absolute;
+        top: 50%;
+        right: 0.5rem;
+        transform: translateY(-50%);
+        border-radius: 8px;
+        background-color: $black-color;
+      }
+    }
+    .footer__social {
+      margin-top: $m-10;
+      display: flex;
+      gap: 2rem;
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+      }
+      .social__link {
+        &:hover {
+          transition: 0.3s;
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}

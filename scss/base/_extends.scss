@@ -1,0 +1,21 @@
+%block {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+%button {
+  margin-top: $m-25;
+  display: inline-block;
+  background-color: $black-color;
+  color: $white-color;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $black-color-alt;
+  }
+}

@@ -1,0 +1,77 @@
+.specs {
+  @extend %block;
+  position: relative;
+  @media screen and (max-width: 768px) {
+    align-items: start;
+  }
+  overflow: hidden;
+  .specs__title {
+    margin-bottom: $m-25;
+    @include pxToEm(64);
+    @media screen and (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .specs__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+    .specs__list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .specs__item {
+        display: flex;
+        flex-direction: column;
+
+        &:nth-child(1) {
+          transform: translateX(40%);
+          @media screen and (max-width: 768px) {
+            transform: translateX(10%);
+          }
+        }
+        &:nth-child(2) {
+          transform: translateX(30%);
+          @media screen and (max-width: 768px) {
+            transform: translateX(0);
+          }
+        }
+        &:nth-child(3) {
+          transform: translateX(30%);
+          @media screen and (max-width: 768px) {
+            transform: translateX(0);
+          }
+        }
+        &:nth-child(4) {
+          transform: translateX(40%);
+          @media screen and (max-width: 768px) {
+            transform: translateX(10%);
+          }
+        }
+        .specs-item__icon {
+          width: 1.5rem;
+        }
+        .specs-item__title {
+          color: $white-color;
+        }
+        .specs-item__characteristic {
+          @include pxToEm(14);
+        }
+      }
+    }
+    .specs__image {
+      @media screen and (max-width: 768px) {
+        height: 50vh;
+        position: absolute;
+        top: 40%;
+        right: -2rem;
+        z-index: -10;
+      }
+    }
+  }
+}

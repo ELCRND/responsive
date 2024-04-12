@@ -1,0 +1,26 @@
+.case {
+  @extend %block;
+  position: relative;
+  .case__title {
+    margin-bottom: $m-25;
+    @include pxToEm(64);
+  }
+  .case__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    .case__link {
+      @extend %button;
+    }
+
+    .case__image {
+      @media screen and (max-width: 768px) {
+        height: 50vh;
+        position: absolute;
+        top: 30%;
+        left: -2rem;
+        z-index: -10;
+      }
+    }
+  }
+}

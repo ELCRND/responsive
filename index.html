@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header container" id="">
+        <a href="#" class="header__logo">
+            <img src="public/img/logo.png" alt="logo">
+        </a>
+        <nav class="header__navigation navigation">
+            <label id="stop-scroll" class="show-navigation">
+                <input type="checkbox">
+            </label>
+
+            <ul class="navigation__list">
+                <li class="navigation__item ">
+                    <a class="navigation__link active-link" href="#hero">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#specs">Specs</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#case">Case</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#products">Products</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="">
+        <!--=============== HOME ===============-->
+        <section class="hero container" id="hero">
+            <div>
+                <img src="public/img/hero.png" alt="" class="hero__image">
+            </div>
+
+            <div class="hero__data">
+                <div class="hero__header">
+                    <h1 class="hero__title">On ear</h1>
+                    <h2 class="hero__subtitle">Beats 3</h2>
+                </div>
+
+                <div class="hero__overview overview">
+                    <h3 class="overview__title">Overview</h3>
+                    <p class="overview__description">Enjoy award-winning Beats sound with wireless listening freedom and
+                        a sleek,
+                        streamlined design with comfortable padded earphones, delivering first-rate playback.
+                    </p>
+                    <button class="overview__btn" type="button">Add to Bag</button>
+                    <b class="overview__price">$299</b>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!--=============== SPONSOR ===============-->
+        <section class="sponsors container">
+            <img class="sponsors__image" src="public/img/sponsor1.png" alt="apple">
+            <img class="sponsors__image" src="public/img/sponsor2.png" alt="spotify">
+            <img class="sponsors__image" src="public/img/sponsor3.png" alt="amazon">
+            <img class="sponsors__image" src="public/img/sponsor4.png" alt="youtube">
+        </section>
+
+        <!--=============== SPECS ===============-->
+        <section class="specs container" id="specs">
+            <h2 class="specs__title">Specs</h2>
+
+            <div class="specs__content">
+                <ul class="specs__list">
+                    <li class="specs__item specs-item">
+                        <img class="specs-item__icon" src="public/img/bluetooth_icon.svg" alt="bluetooth">
+                        <h3 class="specs-item__title">Connection</h3>
+                        <span class="specs-item__characteristic">Bluetooth v5.2</span>
+                    </li>
+
+                    <li class="specs__item specs-item">
+                        <img class="specs-item__icon" src="public/img/battery_icon.svg" alt="battery">
+                        <h3 class="specs-item__title">Battery</h3>
+                        <span class="specs-item__characteristic">Duration 40h</span>
+                    </li>
+
+                    <li class="specs__item specs-item">
+                        <img class="specs-item__icon" src="public/img/charging_icon.svg" alt="charging">
+                        <h3 class="specs-item__title">Load</h3>
+                        <span class="specs-item__characteristic">Fast charge 4.2-AAC</span>
+                    </li>
+
+                    <li class="specs__item specs-item">
+                        <img class="specs-item__icon" src="public/img/microphone_icon.svg" alt="Microphone">
+                        <h3 class="specs-item__title">Microphone</h3>
+                        <span class="specs-item__characteristic">Supports Apple Siri <br> and Google</span>
+                    </li>
+                </ul>
+
+                <div>
+                    <img class="specs__image" src="public/img/specs.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--=============== CASE ===============-->
+        <section class="case container" id="case">
+            <h2 class="case__title">Case</h2>
+
+            <div class="case__content">
+                <div>
+                    <img src="public/img/case.png" alt="" class="case__image">
+                </div>
+
+                <div class="case__description">
+                    <p>With a comfortable and adaptable case so that you can
+                        store it whenever you want, and keep your durability forever.
+                    </p>
+                    <a href="#" class="case__link">
+                        <img src="public/img/info_icon.svg" alt="">
+                        <span class=""></span> More info
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== DISCOUNT ===============-->
+        <section class="discount container">
+            <div class="discount__content">
+                <div class="discount__description">
+                    <h2 class="">Immerse yourself in <br> your music</h2>
+                    <p class="">Get it now, up to 50% off.</p>
+                    <a href="#" class="">
+                        <img src="public/img/shopping_bag_icon.svg" alt="">
+                        <span class=""></span> Shop Now
+                    </a>
+                </div>
+
+                <img class="discount__image" src="public/img/discount.png" alt="product image">
+            </div>
+        </section>
+
+        <!--=============== PRODUCTS ===============-->
+        <section class="products-set container" id="products">
+            <h2 class="products-set__title">
+                Choose <br> Your Style
+            </h2>
+
+            <div class="products-set__content">
+                <article class="products-set__card product">
+                    <img class="product__image" src="public/img/product1.png" alt="product image">
+                    <h3 class="product__title">Black</h3>
+                    <span class="product__price">$249</span>
+                    <button class="product__btn">
+                        <img src="public/img/shopping_bag_icon.svg" alt="buy">
+                    </button>
+                </article>
+
+                <article class="products-set__card product">
+                    <img class="product__image" src="public/img/product2.png" alt="product image">
+                    <h3 class="product__title">Red Black</h3>
+                    <span class="product__price">$249</span>
+                    <button class="product__btn">
+                        <img src="public/img/shopping_bag_icon.svg" alt="buy">
+                    </button>
+                </article>
+
+                <article class="products-set__card product">
+                    <img class="product__image" src="public/img/product3.png" alt="product image">
+                    <h3 class="product__title">Night Black</h3>
+                    <span class="product__price">$249</span>
+                    <button class="product__btn">
+                        <img src="public/img/shopping_bag_icon.svg" alt="buy">
+                    </button>
+                </article>
+                <article class="products-set__card product">
+                    <img class="product__image" src="public/img/product4.png" alt="product image">
+                    <h3 class="product__title">Blue</h3>
+                    <span class="product__price">$249</span>
+                    <button class="product__btn">
+                        <img src="public/img/shopping_bag_icon.svg" alt="buy">
+                    </button>
+                </article>
+
+                <article class="products-set__card product">
+                    <img class="product__image" src="public/img/product5.png" alt="product image">
+                    <h3 class="product__title">Twilight gray</h3>
+                    <span class="product__price">$249</span>
+                    <button class="product__btn">
+                        <img src="public/img/shopping_bag_icon.svg" alt="buy">
+                    </button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <a href="#" class="footer__logo">
+            <img src="public/img/logo.png" alt="logo">
+        </a>
+        <div class="footer__nav nav">
+            <div class="nav__products products">
+                <h3 class="products__list-title">Products</h3>
+
+                <ul class="products__list">
+                    <li>
+                        <a href="#" class="products__link">Headphones</a>
+                    </li>
+                    <li>
+                        <a href="#" class="products__link">Earphones</a>
+                    </li>
+                    <li>
+                        <a href="#" class="products__link">Earbuds</a>
+                    </li>
+                    <li>
+                        <a href="#" class="products__link">Accesories</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__support support">
+                <h3 class="support__list-title">Support</h3>
+
+                <ul class="support__list">
+                    <li>
+                        <a href="#" class="support__link">Product help</a>
+                    </li>
+                    <li>
+                        <a href="#" class="support__link">Register</a>
+                    </li>
+                    <li>
+                        <a href="#" class="support__link">Updates</a>
+                    </li>
+                    <li>
+                        <a href="#" class="support__link">Provides</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__feedback">
+            <form action="" class="footer__form form">
+                <input type="email" placeholder="Email" class="form__input">
+                <button class="form__submit">
+                    <span class=""></span> Subscribe
+                </button>
+            </form>
+
+            <div class="footer__social social">
+                <a href="#" class="social__link">
+                    <img src="public/img/facebook_icon.svg" alt="facebook">
+                </a>
+                <a href="#" class="social__link">
+                    <img src="public/img/instagram_icon.svg" alt="instagram">
+                </a>
+                <a href="#" class="social__link">
+                    <img src="public/img/twiter_icon.svg" alt="twitter">
+                </a>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#hero" class="scrollup" id="scroll-up">
+        &#8593;
+    </a>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>

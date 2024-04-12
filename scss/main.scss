@@ -1,0 +1,16 @@
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/extends";
+@import "./base/mixins";
+@import "./base/base";
+
+@import "./blocks/header.scss";
+
+@import "./blocks/hero.scss";
+@import "./blocks/sponsors.scss";
+@import "./blocks/specs.scss";
+@import "./blocks/case.scss";
+@import "./blocks/discount.scss";
+@import "./blocks/products.scss";
+
+@import "./blocks/footer.scss";

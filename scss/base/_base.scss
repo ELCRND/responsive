@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-width: 360px;
+  font-family: $body-font;
+  background-color: $body-bg;
+  color: $text-color;
+
+  @include pxToEm(20);
+  &:has(#stop-scroll):has(:checked) {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width: min(100%, 1024px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.scrollup {
+  position: fixed;
+  bottom: 2rem;
+  right: 5rem;
+  color: $white-color;
+  @include pxToEm(24);
+}
+
+.active-link {
+  color: $white-color !important;
+}

@@ -1,0 +1,16 @@
+.sponsors {
+  display: flex;
+  justify-content: space-between;
+  .sponsors__image {
+    width: 6rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    place-items: center;
+    justify-content: center;
+  }
+}
