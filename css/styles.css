@@ -471,6 +471,7 @@ body:has(#stop-scroll):has(:checked) {
 
 .case {
   position: relative;
+  overflow: hidden;
 }
 .case .case__title {
   margin-bottom: 2.5rem;

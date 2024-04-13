@@ -1,6 +1,7 @@
 .case {
   @extend %block;
   position: relative;
+  overflow: hidden;
   .case__title {
     margin-bottom: $m-25;
     @include pxToEm(64);

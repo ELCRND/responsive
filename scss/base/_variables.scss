@@ -13,7 +13,6 @@ $title-color: hsl($hue-color, 4%, 95%);
 $text-color: hsl($hue-color, 4%, 75%);
 $text-color-light: hsl($hue-color, 4%, 65%);
 $white-color: #fff;
-$container-color: hsl($hue-color, 4%, 10%);
 $text-gradient: linear-gradient(
   hsl($hue-color, 4%, 24%),
   hsl($hue-color, 4%, 8%)
@@ -23,6 +22,7 @@ $scroll-thumb-color-alt: hsl($hue-color, 4%, 20%);
 
 //bg-colors
 $body-bg: hsl($hue-color, 4%, 6%);
+$container-color: hsl($hue-color, 4%, 10%);
 
 //margin
 
@@ -34,13 +34,3 @@ $m-20: 2rem;
 $m-25: 2.5rem;
 $m-35: 3.5rem;
 $m-55: 5.5rem;
-
-// --biggest-font-size: 5rem;
-//   --bigger-font-size: 3.5rem;
-//   --big-font-size: 2.5rem;
-//   --h2-font-size: 1.25rem;
-//   --h3-font-size: 1.125rem;
-//   --normal-font-size: .938rem;
-//   --small-font-size: .813rem;
-//   --smaller-font-size: .75rem;
-//   --text-line-height: 2rem;
